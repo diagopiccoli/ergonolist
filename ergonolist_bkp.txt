@@ -1,0 +1,323 @@
+ergonolist 
+
+
+prestesa 
+ 
+ 1 - s
+ 2 - s
+ 3 - s
+ 4 - s
+ 5 - n 
+ 6 - s 
+ 7 - s	
+ 8 - s
+ 9 - s
+ 10 - n
+ 11 - s
+ 12 - s
+ 13 - s
+ 14 - n 
+ 15 - n aplica
+ 16 - n
+ 17 - n
+
+desc
+- Titulos e informações todos centrados, as informações todas bem destacadas, todos dados possiuem um rotulo de entrada,
+o mascarmento de dados é realizado em todos dados que possuem essa caracterista, os label não possuem convites para entrar ao input, busca de produtos possui indicadores de continuação, tabelas identificadas.
+Os botoes nao possuem "..", menus possuem > para outros paineis, nenhum botao de ajuda
+
+
+
+agrupamento localizacao
+
+1 - s 
+2 - s 
+3 - s
+4 - s 
+5 - s 
+6 - s 
+7 - s 
+8 - s
+9 - s 
+10 - s 
+11 - s
+
+desc
+- dados seguem uma ordem logica, todos dados alinhados devidamente
+
+agrupamento por formato 
+
+1 - s 
+2 - s 
+3 - s 
+4 - s 
+5 - s 
+6 - s 
+7 - n
+8 - s
+9 - s 
+10 - s 
+11 - s 
+12 - s 
+13 - s 
+14 - s 
+15 - s 
+16 - s 
+17 - s 
+
+desc
+- todos botao são destacados, facilidade para diferenciar dados, dados com diferenca de cores
+nenhum sinal sonoro detectado, campos obrigatorios seguem * 
+
+feedback 
+
+1 - n
+2 - s
+3 - s
+4 - s 
+5 - s 
+6 - n 
+7 - s
+8 - s 
+9 - s
+10 - s 
+11 - s 
+12 - n 
+
+desc
+ nao fornece informacoes sobre impressoes, imformações de tempo de processamento nao sao vistas, 
+ nao fornece um historico de comandos efetuados
+
+ legibilidade
+
+ 1 - s 
+ 2 - s 
+ 3 - s 
+ 4 - s 
+ 5 - s 
+ 6 - s
+ 7 - s 
+ 8 - s 
+ 9 - s 
+ 10 - n 
+ 11 - s 
+ 12 - s 
+ 13 - s 
+ 14 - s 
+ 15 - s 
+ 16 - s 
+ 17 - s 
+ 18 - s 
+ 19 - s 
+ 20 - s 
+ 21 - s 
+ 22 - s 
+ 23 - s
+ 24 - s 
+ 25 - s 
+ 26 - s
+ 27 - s 
+
+ desc
+
+ boa ocupação de espaço, todos itens a direita,  nas tabels usasse um espaço em branco a baixo para separar os itens, maioria dos dados nao se encotnram em order alfabetico, menus todos conforme os padroes, icones com detalhes, 
+
+
+ concisao 
+ 1 - s 
+ 2 - s
+ 3 - s
+ 4 - s 
+ 5 - s
+ 6 - s
+ 7 - s
+ 8 - s 
+ 9 - s
+ 10 - s
+ 11 - s
+ 12 - s
+ 13 - s
+ 14 - s 
+
+ desc
+ - todos alfanmericos sao curtidos e compreensiveis, nomes breves e as poucao abreviações sao curtas, 
+
+
+ acoes minimas
+
+ 1 - s 
+ 2 - s 
+ 3 - s 
+ 4 - s
+ 5 - s 
+desc 
+ - todos itens estao de acordo
+
+ densidade informacional 
+
+ 1 - s 	
+ 2 - s
+ 3 - s
+ 4 - s
+ 5 - s 
+ 6 - n 
+ 7 - s
+ 8 - n 
+ 9 - s
+
+
+desc 
+- quantidade de informações faz com que varias janelas de busca sejam exibidas
+minoria de dados que ultrapassam 9 linhas, 
+
+
+acaoes explicitas 
+
+1 - s
+2 - s 
+3 - s
+4 - s
+
+desc 
+- o sistema deixa o usuario fazer todas tarefas que cabem a ele, nao forcando nenhum ato
+
+
+
+controle do usuario 
+
+
+1 - s 	
+2 - s 
+3 - s
+4 - s
+
+o usuario pode realizar qualquer acao enquanto esta comprando
+
+
+flexibilidade
+
+1 - n 
+2 - n 
+3 - n 
+
+não é possivel eliminar elemetos do html, nenhum comando de macro, nao pode alterar valores default
+
+
+experiencia do usuario 
+
+1 - s
+2 - n 
+3 - n
+4 - s 
+5 - n 
+6 - n 
+
+
+desc 
+- nao trata a diferenca de usuarios, menu fixo 
+
+protecao contra erros
+
+1 - n 
+2 - nao se aplica 
+3 -  nao se aplica 
+4 - s
+5 - n 
+6 - s
+7 - s
+desc
+- nehum sinal sonoro, nenhum campo para dados longo encontrado
+
+
+
+mensagens de erro
+
+1 - s 
+2 - s 
+3 - s
+4 - s 	
+5 - n 
+6 - s 	
+7 - n 
+8 - nao se aplica 
+9 - n 
+
+desc 
+- nenhum nivel de detalhamento, mensagens nao mudam na equencia de erros 
+
+
+
+correcao de erros 
+
+1 - s 
+2 - s 
+3 - n
+4 - n 
+5 - s 
+desc
+- nao possui comando refazer, nao corrige, 
+
+
+consistencia 
+
+1 - s 
+2 - s 
+3 - s
+4 - s 
+5 - s
+6 - s 
+7 - s
+8 - s
+9 - n 
+10 - s
+11 - s
+
+desc
+-  nenhum convite a entrada de dado, 
+
+significados
+
+1 - s
+2 - s
+3 - s
+4 - s
+5 - s
+6 - s
+7 - s
+8 - s 
+9 - s 
+10 - s
+11 - s 
+12 - nao se aplica 
+
+desc
+- nenhum item pisca pisca 
+
+
+compatibilidade
+
+1 - s 
+2 - s
+3 - n 
+4 - n 
+5 - s
+6 - s 
+7 - n 
+8 - n se aplica 
+9 - n se aplica 
+10 - n se aplica  
+11 - s
+12 - n se aplica
+13 - s
+14 - s
+15 - s
+16 - s 
+17 - s
+18 - s 
+19 - s
+20 - s
+21 - s 
+
+desc, 
+- nenhum modal, nenhum voz, nenhuma animação 
+

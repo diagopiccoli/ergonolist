@@ -1,0 +1,299 @@
+/*
+
+	STYLE LESS
+
+*/
+
+@import "ambiente.less";
+@import "cores.less";
+@import "fontes.less";	
+@import "funcoes.less";
+@import "icons.less";
+@import "padroes.less";
+@import "tooltip.less";
+
+.titulo-descritivo {
+	.titulo;
+	.titulo > .titulo-descritivo;
+}
+
+.descricao-pagina {
+	.descricao;
+	.descricao > .descricao-pagina;
+}
+
+/* TOPO */
+.div-box-topo {
+	padding: 0 15px;
+	background: @preto;
+}
+	.navbar-menu {
+		width: 100%;
+		height: 40px;
+		display: inline-block;
+	}
+		.navbar-menu > .div-logo {
+			float: left;
+		}
+			.navbar-menu > .div-logo > a > ul,
+			.navbar-menu > .div-logo > a > ul > li {
+				float: left;
+				display: inline-block;
+			}
+				.navbar-menu > .div-logo > a {
+					&:hover ul > li:last-child {
+						.setTextShadow(1px 1px 1px @branco);
+					}
+				}
+					.navbar-menu > .div-logo > a > ul > li {
+						color: @branco;
+					}
+					.navbar-menu > .div-logo > a > ul > li:first-child {
+						font-size: 25px;
+					}
+					.navbar-menu > .div-logo > a > ul > li:last-child {
+						font-size: 30px;
+						color: @vermelho;
+						.setTextShadow(1px 1px 1px transparent);
+					}
+		
+		.navbar-menu > .div-menu {
+			float: right;
+		}
+			.navbar-menu > .div-menu > ul,
+			.navbar-menu > .div-menu > ul > li {
+				height: 40px;
+				float: left;
+				display: inline-block;
+			}
+				.navbar-menu > .div-menu > ul > li > a {
+					padding: 8px 15px 0 15px;
+					height: 40px;
+					color: @branco;
+					border-left: 1px solid @preto;
+					border-right: 1px solid @preto;
+					border-bottom: 1px solid @preto;
+					display: inline-block;
+					&:hover {
+						background: @branco;
+						color: @cinzaFonte;
+					}
+				}
+				.navbar-menu > .div-menu > ul > li.active > a {
+					background: @branco !important;
+					color: @cinzaFonte !important;
+					border-bottom: 1px solid @branco !important;
+				}
+
+/* CONTEUDO */
+.div-box-conteudo {
+	padding: 0 15px;
+}
+	.div-conteudo-pagina {
+		padding: 15px 0;
+		width: 100%;
+	}
+		.div-criar-checklist {
+			padding-right: 15px;
+			width: 50%;
+		}		
+			.div-new-checklist,
+			.div-listar-checklist {
+				padding: 15px;
+				width: 100%;
+				margin: 0 0 15px 0;
+				border: 1px solid @preto;
+				.setBorderRadius(all, 5px);
+			}
+				.div-listar-checklist > ul {
+					height: 250px;
+					overflow: auto;
+				}
+					.div-listar-checklist > ul > .li-checklist {
+						margin: 0 0 5px 0;
+						width: 100%;
+						display: inline-block;
+					}
+						.div-listar-checklist > ul > .li-checklist > a {
+							padding: 5px;
+							text-align: left;
+							background: @cinzaBtn;
+							width: 100%;
+							display: inline-block;
+							.setBorderRadius(all, 5px);
+							&:hover {
+								background: @cinzaBorda;
+							}
+						}
+			
+		.div-etapas-checklist {
+			padding-left: 15px;
+			width: 50%;
+		}
+			.div-ind-criterio {
+				padding: 5px 15px;
+				margin: 0 0 10px 0;
+				border: 1px solid @preto;
+				width: 100%;
+				.setBorderRadius(all, 5px);
+			}
+				.titulo-criterio {
+					.titulo;
+					.titulo > .titulo-criterio;
+				}
+					.titulo-criterio > small {
+						font-size: 15px;
+					}
+				.descricao-criterio {
+					.descricao;
+					.descricao > .descricao-criterio;
+				}
+	
+	/* GRAFICOS */
+	.div-perguntas-checklist {
+		padding: 5px 15px;
+		position: absolute;
+		width: 100%;
+		height: 210px;
+		top: -100%;
+		left: 0;
+		background: @branco;
+		border: 1px dashed @vermelho;
+		display: none;
+		.setBorderRadius(all, 15px);
+		.setBoxShadow(1px 1px 10px @cinzaBorda);
+	}
+	.div-perguntas-checklist.transition-in {
+		display: inline-block;
+	}
+	.div-perguntas-checklist.transition-out {
+		top: -100% !important;
+	}
+	.div-perguntas-checklist.in {
+		top: 10px;
+		display: inline-block;
+		.setOpacity(1, 100, null);
+	}
+		.desc-pergunta-criterio {
+			width: 100%;
+			height: 150px;
+			overflow: auto;
+		}
+			.desc-pergunta-criterio > div {
+				width: 50%;
+				min-height: 150px;
+			}
+				.desc-pergunta-criterio > div > ol {
+					padding: 15px;
+					margin-left: 15px;
+				}
+					.desc-pergunta-criterio > div > ol > li {
+						margin: 0 0 5px 0;
+						text-align: left;
+						font-weight: 300;
+						color: @vermelho;
+					}
+					.desc-pergunta-criterio > div > ol > li > strong {
+						color: @cinzaFonte !important;
+						padding-bottom: 5px;
+					}
+					
+	
+	.menu-categorias {
+		margin: 15px 0 20px 0;
+		width: 100%;
+	}
+		.menu-categorias > form > div {
+			padding: 0 7.5px;
+			width: 50% !important;
+			clear: none !important;
+			float: left;
+		}
+			.menu-categorias > form > div > select {
+				display: inline-block;
+				clear: both;
+				float: left;
+			}
+	
+	.div-resultado-checklist {
+		padding-bottom: 15px !important;
+	}
+	.div-resultado-checklist.close {
+		.setOpacity(0, 0, important);
+	}
+	.div-resultado-checklist,
+	.div-cabecalho-checklist,
+	.div-comparacao-checklist {
+		width: 100%;
+		.setOpacity(1, 100, null);
+	}
+		.div-cabecalho-checklist {
+			margin: 0 0 15px 0;
+			min-height: 100px;
+		}
+			.div-resultado-checklist.close .div-grafico-checklist {
+				.setTransformForce(translateX(-100%));
+			}
+			.div-grafico-checklist {
+				padding: 0 7.5px;
+				width: 50%;
+				height: 315px;
+				position: relative;
+				.setTransform(translateX(0));
+			}
+				.grafico-checklist {
+					width: 100%;
+					height: 300px;					
+					border: 1px solid @preto;
+					overflow: hidden;
+					.setBorderRadius(all, 15px);
+				}
+					@media only screen and (max-width: 1100px) {
+						.grafico-checklist > div {
+							left: -25px;
+						}
+					}
+
+/* RODAPE */
+.div-box-rodape {
+	padding: 0 15px;
+}
+	.descricao-rodape {
+		width: 100%;
+	}
+		.descricao-rodape > ul,
+		.descricao-rodape > ul > li {
+			float: left;
+			display: inline-block;
+		}
+			.descricao-rodape > ul > li {
+				color: @cinzaFonte;
+			}
+			.descricao-rodape > ul > li:first-child {
+				font-size: 25px;
+			}
+			.descricao-rodape > ul > li:nth-child(2) {
+				font-size: 30px;
+				color: @vermelho;
+			}
+			.descricao-rodape > ul > li:nth-child(3) {
+				padding: 15px 0 0 15px; 
+			}
+			
+
+.div-retorno-geral {
+	padding: 5px;
+	position: absolute;
+	left: -100%;
+	bottom: 15px;
+	width: 300px;
+	height: 80px;
+	border: 1px solid @cinzaBorda;
+	background: @cinzaBtn;
+	.setOpacity(0, 0, null);
+	.setBoxShadow(1px 1px 10px @cinzaBorda);
+}
+	.div-retorno-geral.in {
+		left: 15px;
+		.setOpacity(1, 100, important);
+	}

@@ -1,0 +1,212 @@
+/*
+	
+	PADRÕES LESS
+	
+*/
+
+/* RESETS */
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	vertical-align: middle;
+	text-align: center;
+	color: @cinzaFonte;
+	font-family: @fontePadrao;
+	font-weight: 300;
+	.setBoxSizing(border-box);
+	.setOutline(none);
+}
+
+body {
+	background: @branco;	
+}
+
+div,
+img {
+	display: inline-block;
+}
+div {
+	float: left;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+strong {
+	font-weight: 600;
+}
+
+[disabled="disabled"],
+[disabled="true"],
+[disabled=""] {
+	.setOpacity(0.5, 50, important);
+}
+
+/* BOX */
+.div-box-total {
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+	.div-box,
+	.div-box-responsive {
+		width: 100%;
+		float: left;
+	}
+	.div-box {
+		min-width: 1000px;
+	}
+	.div-box-responsive-50 {
+		width: 50% !important;
+		float: left;
+	}
+		.div-limiter {
+			width: 100%;
+			max-width: 1600px;
+			float: none;
+			position: relative;
+		}
+		
+/* BUTTON */
+.btn {
+	padding: 5px 10px;
+	height: 32px;
+	font-size: 15px;
+	cursor: pointer;
+	.transition-half;
+	.setBorderRadius(all, 4px);
+}
+
+/* DISPLAY */
+.hide {
+	display: none;
+}
+.show {
+	display: inline-block;
+}
+
+/* FORM */
+.div-box-form {
+	display: inline-block;
+	float: left;
+}
+	.div-box-form label {
+		margin: 0 0 5px 0;
+		display: inline-block;
+		clear: both;
+		float: left;
+	}
+.form-inline .div-box-form {
+	margin: 0 2px;
+}
+.form-block .div-box-form {
+	width: 100%;
+	margin: 0 0 10px 0;
+	clear: both;
+}
+.div-box-form-50 {
+	padding: 0 5px;
+	width: 50% !important;
+	clear: none !important;
+}
+
+/* INPUT */
+.input-box {
+	padding: 5px 10px;
+	width: 100%;
+	border: 1px solid @cinzaBorda;
+	background: @branco;
+	font-size: 15px;
+	text-align: left;
+	.setBorderRadius(all, 4px);
+	.setBoxShadow(inset 0 1px 1px rgba(0,0,0,.075));
+	&:focus {
+		border-color: @vermelho;
+	}
+}
+select.input-box {
+	height: 35px !important;
+}
+
+	/* CHECKBOX */
+	.checkbox-radiobox,
+	.checkbox-radiobox * {
+		.setTransition(all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000));
+	}
+		.checkbox-radiobox > label {
+			padding: 5px;
+			background: transparent;
+			cursor: pointer;
+			color: @cinzaFonte;
+			display: inline-block;
+			.setBorderRadius(all, 4px);
+			&:hover {
+				background: @cinzaBorda;
+			}
+		}
+			.checkbox-radiobox > label > span {
+				vertical-align: 1px;
+				display: none;
+			}
+		.checkbox-radiobox > input {
+			display: none;
+		}
+		.checkbox-radiobox input[type="radio"]:checked + label,
+		.checkbox-radiobox input[type="checkbox"]:checked + label {
+			background: @cinzaBtn;
+			color: @cinzaFonte;
+		}
+		.checkbox-radiobox input[type="radio"]:checked + label > span,
+		.checkbox-radiobox input[type="checkbox"]:checked + label > span {
+			color: @cinzaFonte;
+			display: inline-block;
+		}
+
+/* PADDING */
+.zerar-padding-all {
+	padding: 0 !important;
+}
+.zerar-padding-top {
+	padding-top: 0 !important;
+}
+.zerar-padding-left {
+	padding-left: 0 !important;
+}
+.zerar-padding-right {
+	padding-right: 0 !important;
+}
+.zerar-padding-bottom {
+	padding-bottom: 0 !important;
+}
+
+/* TEXT-ALIGN */
+.text-align-center {
+	text-align: center;
+}
+.text-align-left {
+	text-align: left;
+}
+.text-align-right {
+	text-align: right;
+}
+.text-align-justify {
+	text-align: justify;
+}
+
+/* TRANSITION */
+.transition {
+	.setTransition(all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000));
+}
+.transition-half * {
+	.setTransition(all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000));
+}
+.transition-all,
+.transition-all * {
+	.setTransition(all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000));
+}
